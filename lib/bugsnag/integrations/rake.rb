@@ -32,7 +32,7 @@ if Gem::Version.new(RUBY_VERSION.dup) >= Gem::Version.new('2.0')
     end
   end
 
-  Rake::Task.send(:prepend, Bugsnag::RakeTask)
+  #Rake::Task.send(:prepend, Bugsnag::RakeTask)
 else
   class Rake::Task
     FRAMEWORK_ATTRIBUTES = {
